@@ -1,12 +1,26 @@
 body {
   margin: 0px;
+  background-color: rgb(180, 180, 180);
 }
 
-.container {
+section {
+  width: fit-content;
+}
+
+.container-6 {
   margin: 5px;
   display: grid;
   grid-template-columns: 250px 250px 250px;
   grid-template-rows: 200px 200px;
+  column-gap: 5px;
+  row-gap: 5px;
+}
+
+.container-12 {
+  margin: 5px;
+  display: grid;
+  grid-template-columns: 250px 250px 250px 250px;
+  grid-template-rows: 200px 200px 200px;
   column-gap: 5px;
   row-gap: 5px;
 }
@@ -38,4 +52,52 @@ img {
 .cover-visible,
 .cover-found {
   display: none;
+}
+
+p {
+  margin: 20px;
+  font-weight: bold;
+  font-size: large;
+}
+
+.alert-box {
+  padding: 0;
+  margin: 0;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.alert {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.alert-danger {
+  color: red;
+}
+
+.alert-success {
+  color: green;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.radio-buttons {
+  display: block;
+}
+
+.buttons {
+  text-align: center;
+}
+.buttons label {
+  font-weight: bold;
+}
+
+input {
+  margin: 5px;
 }
