@@ -52,7 +52,12 @@ const App = () => {
     //   }
     // });
     // setPictures(newPictures);
-    setPictures(newPictures('id', id, 'visible'));
+    const visible = pictures.filter((picture) =>{
+      return picture.type === 'visible';
+    });
+    if(visible.length < 2) {
+      setPictures(newPictures('id', id, 'visible'));
+    }
   }
 
   useEffect(() => {
@@ -64,9 +69,7 @@ const App = () => {
       const timeout = setTimeout(() => {
         setScore(0);
         setFailed(0);
-        setPictures(pictures.map((picture) => {
-        return {...picture, type: 'invisible'};
-      }));
+        setPictures(randomData());
       }, 3000)
       return () => clearTimeout(timeout);
     }
