@@ -43,6 +43,11 @@ img {
   left: 0;
   width: 250px;
   height: 200px;
+  cursor: pointer;
+}
+
+.cover:hover {
+  background-color: rgb(1, 90, 1);
 }
 
 .cover-invisible {
@@ -64,6 +69,7 @@ p {
   padding: 0;
   margin: 0;
   height: 30px;
+  width: auto;
   align-items: center;
   justify-content: center;
 }
@@ -95,9 +101,12 @@ p {
   text-align: center;
 }
 .buttons label {
+  font-size: medium;
   font-weight: bold;
+  cursor: pointer;
 }
 
 input {
   margin: 5px;
+  cursor: pointer;
 }

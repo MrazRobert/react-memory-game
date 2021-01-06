@@ -133,7 +133,7 @@ const App = () => {
           }
         </div>
         <form className="radio-buttons">
-          <p>Please select picture amount:</p>
+          <p>Please select picture quantity:</p>
           <div className="buttons">
             <label htmlFor="six">6</label>
             <input type="radio" id="six" name="quantity" value="6" defaultChecked
