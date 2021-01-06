@@ -106,7 +106,7 @@ const App = () => {
         return () => clearTimeout(timeout);
       }
     }
-  }, [pictures, newPictures,failed, score]);
+  }, [pictures, newPictures, failed, score]);
 
   return (
     <section>
@@ -136,7 +136,7 @@ const App = () => {
           <p>Please select picture amount:</p>
           <div className="buttons">
             <label htmlFor="six">6</label>
-            <input type="radio" id="six" name="quantity" value="6"
+            <input type="radio" id="six" name="quantity" value="6" defaultChecked
                   onClick={(e) => setQuantity(e.target.value)} />
             <label htmlFor="twelve">12</label>
             <input type="radio" id="twelve" name="quantity" value="12" 
