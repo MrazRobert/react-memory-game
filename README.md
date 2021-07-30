@@ -5,7 +5,7 @@
 <img src="https://img.shields.io/github/languages/top/MrazRobert/react-memory-game.svg" >
 </p>
 
-<h2 align="center"><a href="#">Live Demo</a></h2>
+<h2 align="center"><a href="https://mr85-react-memorygame.netlify.app/">Live Demo</a></h2>
 
 ## Description
 
